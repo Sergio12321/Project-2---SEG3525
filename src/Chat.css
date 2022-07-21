@@ -1,0 +1,135 @@
+.btn-groupe{
+    padding: 6px 20px;
+    font-size: 20px;
+    margin-left: 85%;
+    margin-top: 20px;
+    background: linear-gradient(
+    90deg,
+    rgb(255, 176, 39) 0%,
+    rgb(236, 67, 0) 100%
+    );
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-groupe:hover{
+    background: linear-gradient(
+        90deg,
+        rgb(236, 67, 0) 0%,
+        rgb(255, 176, 39) 100%
+        );
+    color: #f7f6f6;
+    transition: all 0.3s ease-out;
+}
+
+.chat-container{
+    background-image: url("chat_background.jpg");
+    background-size: cover;
+    display: felx;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.chat-title{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 60px;
+    color: #f2e9e9;
+}
+
+.form-control{
+    margin-top: 30px;
+    width: 250px;
+    height: 25px;
+    font-size: 15px;
+}
+
+.title-box{
+    color: aliceblue;
+    margin-right: 50px;
+    margin-left: 150px;
+    font-size: 20px;
+}
+
+.container{
+    margin-top: 25px;
+    margin-left: 180px;
+    margin-bottom: 250px;
+    width: 450px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(
+        90deg,
+        rgb(255, 176, 39) 0%,
+        rgb(236, 67, 0) 100%
+        );;
+}
+
+.header h1{
+    color: white;
+    padding: 15px;
+}
+
+.body{
+    flex: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+}
+
+.message{
+    background: linear-gradient(
+        90deg,
+        rgb(255, 176, 39) 0%,
+        rgb(236, 67, 0) 100%
+        );;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.user_message{
+    margin-left: auto;
+    background: white;
+    color: black;
+}
+
+.footer form{
+    display: flex;
+}
+form input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+}
+form button{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background:linear-gradient(
+        90deg,
+        rgb(255, 176, 39) 0%,
+        rgb(236, 67, 0) 100%
+        );
+    color: white;
+    cursor: pointer;
+}
+form button:hover{
+    background: linear-gradient(
+        90deg,
+        rgb(255, 176, 39) 0%,
+        rgb(236, 67, 0) 100%
+        );
+    transition: 0.2s ease;
+}

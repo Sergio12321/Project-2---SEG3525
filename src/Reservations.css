@@ -1,0 +1,63 @@
+.reservation-container{
+    background-image: url("reservations_background.jpg");
+    background-size: cover;
+    display: felx;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.box-jours-reservation{
+    margin-top: 60px;
+    margin-left: 110px;
+    margin-right: 110px;
+    height: 150px;
+    border-color: rgb(245, 239, 239);
+    border-style:groove;
+}
+
+.btn-group-1{
+    margin-left: 30px; 
+}
+
+.btn-group-2{
+    margin-left: 130px;
+}
+
+.jours-title{
+    margin-left: 20px;
+    color: #f6efef;
+}
+
+.reservations-title{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 60px;
+    color: #f6efef;
+}
+
+.btn--petit{
+    padding: 6px 20px;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: linear-gradient(
+    90deg,
+    rgb(255, 176, 39) 0%,
+    rgb(236, 67, 0) 100%
+    );
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--petit:hover{
+    background: linear-gradient(
+        90deg,
+        rgb(236, 67, 0) 0%,
+        rgb(255, 176, 39) 100%
+        );
+    color: #f6efef;
+    transition: all 0.3s ease-out;
+}

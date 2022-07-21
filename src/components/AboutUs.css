@@ -1,0 +1,92 @@
+.about-us{
+    background: linear-gradient(90deg, rgb(162, 95, 7) 0%, rgb(72, 3, 3) 100%);
+    height: 125vh;
+    width: 100%;
+}
+
+.about-us-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    margin-left: 41%;
+    color: aliceblue;
+}
+
+.up{
+    margin-top: 20px;
+    height: 40vh;
+}
+
+.text-up{
+    border-radius: 20px;
+    box-shadow: 20px;
+    position: absolute;
+    height: 40vh;
+    width: 650px;
+    margin-top: 25px;
+    margin-right: 0px;
+    margin-left: 50px;
+    word-spacing: 0.25em;
+    text-align: justify;
+}
+
+.title{
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px #000000;
+    text-overflow: initial;
+    font-size: 40px;
+}
+
+.paragraphe{
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 45px;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.paragraphe-2{
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 90px;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.image-up{
+    background-image: url("image-top.jpg");
+    margin-left: 0px;
+    position: relative;
+    margin-left: 51%;
+    margin-right: 50px;
+    margin-top: 25px;
+    height: 46vh;   
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px;
+    -moz-box-shadow: 10px 10px 5px #000000;
+    -webkit-box-shadow: 10px 10px 5px #000000;
+    -khtml-box-shadow: 10px 10px 5px #000000; 
+}
+
+.image-down{
+    background-image: url("image-down.jpg");
+    height: 46vh;
+    width: 750px;
+    margin-top: 20px;
+    margin-left: 50px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px;
+    -moz-box-shadow: 10px 10px 5px #000000;
+    -webkit-box-shadow: 10px 10px 5px #000000;
+    -khtml-box-shadow: 10px 10px 5px #000000;
+}
+
+.text-down{
+    background-color:transparent;
+    margin-left: 57%;
+    margin-right: 50px;
+    margin-top: 100px;
+    word-spacing: 0.25em;
+    text-align: justify;
+}

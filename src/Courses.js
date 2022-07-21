@@ -1,0 +1,230 @@
+import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom'
+import { Button } from './components/Button';
+import './components/Button.css';
+import './components/Navbar.css';
+import './components/AboutUs.css';
+import './components/Contact.css';
+import './Courses.css';
+
+function Courses(){
+
+    const [click, setClick] = useState(false);
+    const [button, setButton] = useState(true);
+
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
+    const showButton = () => {
+        if(window.innerWidth <= 960){
+            setButton(false);
+        }else{
+            setButton(true);
+        }
+    };
+
+    useEffect(() => {
+        showButton()
+    }, []);
+
+    window.addEventListener('resize', showButton);
+
+    return (
+        <>
+        <nav className='navbar'>
+            <div className='navbar-container'>
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                    BASKET FOR FUN! <i className="fa-solid fa-basketball"></i>
+                </Link>
+                <div className='menu-icon' onClick={handleClick}>
+                    <i class={click ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'} />
+                </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className='nav-item'>
+                        <Link to='/courses' className='nav-links' onClick={closeMobileMenu}>
+                            Cours
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/reservations' className='nav-links' onClick={closeMobileMenu}>
+                            Reservations
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/chat' className='nav-links' onClick={closeMobileMenu}>
+                            Chat
+                        </Link>
+                    </li>
+                </ul>
+                {button && <Button 
+                buttonStyle='btn--outline'
+                buttonSize='btn--large'
+                >
+                    Sign up
+                </Button>}
+            </div>
+        </nav>
+        <div className='cours-container'>
+            <h1 className='cours-title'>Cours offerts</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jours</th>
+                        <th>Cours niveau 1</th>
+                        <th>Cours niveau 2</th>
+                        <th>Cours niveau 3</th>
+                        <th>Prix par séance</th>
+                        <th>Prix adhésion mensuelle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>13:00-14:30 p.m.
+                            <Button 
+                                className="btns-cours" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>9:00-10:30 a.m.
+                        <Button 
+                                className="btns-cours" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>-</td>
+                        <td>15 dllrs</td>
+                        <td>30 dllrs</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>-</td>
+                        <td>16:00-17:30 p.m.
+                        <Button 
+                                className="btns" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>13:00-14:30 p.m.
+                        <Button 
+                                className="btns" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>15 dllrs</td>
+                        <td>30 dllrs</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>16:00-17:30 p.m.
+                        <Button 
+                                className="btns" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>15 dllrs</td>
+                        <td>30 dllrs</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>-</td>
+                        <td>13:00-14:30 p.m.
+                        <Button 
+                                className="btns" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>9:00-10:30 a.m.
+                        <Button 
+                                className="btns" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>15 dllrs</td>
+                        <td>30 dllrs</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>9:00-10:30 a.m.
+                        <Button 
+                                className="btns" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>-</td>
+                        <td>16:00-17:30 p.m.
+                        <Button 
+                                className="btns" 
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--medium'
+                            >
+                                Réserver
+                            </Button>
+                        </td>
+                        <td>15 dllrs</td>
+                        <td>30 dllrs</td>
+                    </tr>
+                </tbody>
+            </table>
+            <Button
+                buttonStyle='btn--cours' 
+                buttonSize='btn--large'
+            >
+                Devenir membre
+            </Button>
+        </div>
+        <div className='contact-us'>
+            <h1 className='contact-us-title'>Contact</h1>
+            <div className='contact-info-left'>
+                <p className='info-num'>Numéro de téléphone: (513) 467-1587</p>
+                <p className='info-ad'>Adresse: 80 Sweetland Ave. Ottawa, ON K1N 7T6</p>
+                <p className='info-cou'>Courriel: basketforfun@hotmail.com</p>
+            </div>
+            <div className='contact-info-right'>
+                <p className='right-title'>Heures d'ouverture:</p>
+                <p className='horaires'>Lundi : 8:00 AM - 8:00 PM
+                Mardi : 8:00 AM - 8:00 PM
+                Mercredi : 8:00 AM - 8:00 PM
+                Jeudi : 8:00 AM - 8:00 PM
+                Vendredi : 8:00 AM - 8:00 PM</p>
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default Courses

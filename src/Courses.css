@@ -1,0 +1,51 @@
+.cours-container{
+    background-image: url("cours_background.webp");
+    background-size: cover;
+    display: felx;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.cours-title{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 60px;
+
+}
+
+table{
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 86%;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: center;
+  padding: 25px;
+  font-size: 24px;
+}
+
+th {
+  background: linear-gradient(90deg, rgb(162, 7, 61) 0%, rgb(227, 117, 7) 10%);
+}
+
+td {
+  background: linear-gradient(90deg, rgb(44, 26, 3) 0%, rgb(227, 143, 15) 5%);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 28px;
+}
